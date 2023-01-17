@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+          
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width">
+          <title>Encriptador de Textos</title>                   
+          <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="src/css/reset.css">
+          <link rel="stylesheet" href="src/css/style.css">
+          
+     </head>
+     
+     <body>
+          <main class="contenido-Principal">
+               <div class="imagen-logo-Alura">
+                    <a href="index.html"><img src="src/images/logo.png" alt="Logo"></a>               
+               </div>
+               
+               <div class="textoIngresar">
+                    <textarea name="textoIngresado" autocapitalize="none" id="textoIngresado" cols="30" rows="10" placeholder="Ingresa el texto a encriptar"></textarea>
+               </div>
+
+
+               <section class="encriptado-muestra sombra">
+                    <div class="imagen-muñeco-Alura">
+                         <img src="src/images/lupa.gif" alt="Muñeco ningun mensaje encontrado" class="imagenEncriptado">
+                    </div>
+
+                    <div class="sinEncriptar">
+                         <p class="parrafo-no-encontrado">Ningún mensaje fue encontrado</p>
+                         <p class="parrafo-muestra-texto">Ingresa el texto que desea encriptar o desencriptar. </p>
+                    </div>
+
+                         <textarea name="texto" id="texto" cols="30" rows="10" class="noMostrar textareaEncriptado" readonly="readonly"></textarea>
+                         <button type="submit" class="noMostrar btn-copiar" onclick="copiarTexto()">Copiar</button>
+               </section>
+
+               <div class="botones-Usuario">
+                    <div class="advertencia">
+                         <img src="src/images/alerta.png" alt="advertencia" class="img-alerta"><h5>solo letras minùsculas y sin acentos</h5>
+                    </div>
+                    <div>
+                         <button type="submit" class="btn-encriptar" id="encriptar" onclick="encriptar()">Encriptar</button>
+                         <button type="submit" class="btn-desencriptar" id="desencriptar" onclick="desEncriptar()" >Desencriptar</button>
+                    </div>
+
+          
+          </main>
+
+          <footer>
+               <p>Realizado por <span>Sadid Romero  </span> | Oracle + Alura Latam | &copy; 2022 |</p>
+          </footer>
+
+          <script src="src/js/app.js"></script>
+     </body>
+</html>
